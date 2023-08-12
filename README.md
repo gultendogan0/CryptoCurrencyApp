@@ -1,7 +1,10 @@
 # CryptoCurrencyApp
 
 ## 	:book: Description :
-Crypto Currency App is a crypto Android app where users can learn about coins. Users can view lists of coins and get detailed information about them.
+- Crypto Currency App is a crypto Android Jetpack Compose app where users can learn about coins. Users can view lists of coins and get detailed information about them.
+- The site where the API is taken from : https://api.coinpaprika.com
+- Coins : https://api.coinpaprika.com/v1/coins
+- Coin Detail : https://api.coinpaprika.com/v1/coins/btc-bitcoin
 
 </br>
 
