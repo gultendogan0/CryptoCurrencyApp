@@ -22,7 +22,10 @@
 ## :camera_flash: Screens :
 | Coin List | Coin Detail (BTC) | Coin Detail (BNB) |  
 |:-:|:-:|:-:|
-| ![WhatsApp Image 2023-08-12 at 15 10 43](https://github.com/gultendogan0/CryptoCurrencyApp/assets/63645518/6eb71f31-7f9a-4d25-84f5-a39f28f4b792) | ![WhatsApp Image 2023-08-12 at 15 10 28](https://github.com/gultendogan0/CryptoCurrencyApp/assets/63645518/d32611a3-6469-4bac-b4c7-c4fdd44681ea) | ![WhatsApp Image 2023-08-12 at 15 10 29](https://github.com/gultendogan0/CryptoCurrencyApp/assets/63645518/f7860a31-0f8c-431b-b18f-4aeb817b115e) |
+| ![WhatsApp Image 2023-08-12 at 15 10 43](https://github.com/gultendogan0/CryptoCurrencyApp/assets/63645518/cf15ad98-15de-47b1-a54e-e373fbd53ec6) | ![WhatsApp Image 2023-08-12 at 15 10 28](https://github.com/gultendogan0/CryptoCurrencyApp/assets/63645518/42488616-4719-44c7-afd6-d0d240801a04) | ![WhatsApp Image 2023-08-12 at 15 10 29](https://github.com/gultendogan0/CryptoCurrencyApp/assets/63645518/2aa486a4-9d23-4d2c-9670-b773f8f013a5) |
+
+
+
 
 
 
