@@ -1,5 +1,6 @@
 package com.example.cryptocurrencyapplication.presentation.coin_detail
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -17,6 +18,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
+import com.bumptech.glide.integration.compose.GlideImage
 import com.google.accompanist.flowlayout.FlowRow
 import com.example.cryptocurrencyapplication.presentation.Screen
 import com.example.cryptocurrencyapplication.presentation.coin_detail.components.CoinTag
@@ -48,6 +51,7 @@ fun CoinDetailScreen(
                             text = if(coin.isActive) "active" else "inactive",
                             color = if(coin.isActive) Color.Green else Color.Red,
                             fontStyle = FontStyle.Italic,
+                            style = MaterialTheme.typography.titleLarge,
                             textAlign = TextAlign.End,
                             modifier = Modifier
                                 .align(CenterVertically)
@@ -55,10 +59,18 @@ fun CoinDetailScreen(
                         )
                     }
                     Spacer(modifier = Modifier.height(15.dp))
-                    Text(
-                        text = coin.description,
-                        style = MaterialTheme.typography.labelSmall
-                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ){
+                        //"https://static.coinpaprika.com/coin/btc-bitcoin/logo.png"
+                        loadImage(path = coin.logo)
+                        Spacer(modifier = Modifier.padding(10.dp))
+                        Text(
+                            text = coin.description,
+                            style = MaterialTheme.typography.labelSmall
+                        )
+                    }
                     Spacer(modifier = Modifier.height(15.dp))
                     Text(
                         text = "Tags",
@@ -107,4 +119,10 @@ fun CoinDetailScreen(
             CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
         }
     }
+}
+
+@OptIn(ExperimentalGlideComposeApi::class)
+@Composable
+fun loadImage(path: String){
+    GlideImage(model = path, contentDescription = "loadImage")
 }
